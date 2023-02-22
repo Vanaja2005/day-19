@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+	int i,evensum,oddsum,diff;
+	while(i<=10)
+	{
+		printf("%d\n",i);
+		if(i%2==0)
+		evensum=evensum+i;
+		else
+		oddsum=oddsum+i;
+		i++;
+	}
+	diff=evensum-oddsum;
+	printf("even sum=%d\nodd sum=%d\ndifference=%d",evensum,oddsum,diff);
+}
